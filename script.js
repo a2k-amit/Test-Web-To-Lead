@@ -2,6 +2,7 @@ let captchaChecked = false;
 function isCaptchaTrue() {
   captchaChecked = true;
 }
+
 function handlebeforesubmit(event) {
   if (captchaChecked) {
     let outputleaddate = document.querySelector(".output_lead_date");
