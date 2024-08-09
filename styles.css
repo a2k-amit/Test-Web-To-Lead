@@ -104,5 +104,5 @@ h2 {
 
 .g-recaptcha {
     display: block;
-    margin: 0px;
+    margin: 0 auto 20px auto;
 }
