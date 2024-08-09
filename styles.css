@@ -76,7 +76,7 @@ input[type="submit"] {
     color: #ffffff; /* White text */
     border: none;
     padding: 20px 25px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 0%;
     border-radius: 6px;
     font-size: 18px;
@@ -105,4 +105,5 @@ h2 {
 .g-recaptcha {
     display: block;
     margin: 0 auto 20px auto;
+    align-items: center;
 }
