@@ -110,6 +110,7 @@ h2 {
 
 .g-recaptcha{
     margin-top: 21px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     }
