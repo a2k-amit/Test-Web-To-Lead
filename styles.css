@@ -102,8 +102,14 @@ h2 {
     margin-bottom: 20px; /* Space below the heading */
 }
 
-.g-recaptcha {
+/* .g-recaptcha {
     display: block;
     margin: 0 auto 20px auto;
     align-items: center;
-}
+} */
+
+.g-recaptcha{
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+    }
