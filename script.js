@@ -2,20 +2,18 @@ let captchaChecked = false;
 function isCaptchaTrue() {
   captchaChecked = true;
 }
-
 function handlebeforesubmit(event) {
   if (captchaChecked) {
     let outputleaddate = document.querySelector(".output_lead_date");
     let inputleaddate = document.querySelector(".input_lead_date");
+    console.log("input lead date value -", inputleaddate.value);
 
-    console.log("input_lead_date.value", inputleaddate.value); // string >> date(en_IN)
+    let formatDate = new Date(inputleaddate.value).toLocaleDateString("en-IN");
 
-    let formatedDate = new Date(inputleaddate.value).toLocaleDateString(
-      "en-IN"
-    );
-    outputleaddate.value = formatedDate;
+    outputleaddate.value = formatDate;
+    console.log("ouput lead date value -", outputleaddate.value);
   } else {
-    alert("Please Check The Captcha");
+    alert("Please verify the captcha");
     event.preventDefault();
   }
 }
